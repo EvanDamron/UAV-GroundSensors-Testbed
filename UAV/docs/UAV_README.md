@@ -40,7 +40,7 @@ UAV-GroundSensors-Testbed/
 This script handles the communication between the UAV and the ground sensors. It sets up a TCP server to receive data from the sensors and save it to the specified location.
 
 ### 2. `drone_flight/src/flight_execution.cpp`
-This node sends all necessary MAVLink messages to the drone. It manages the drone's flight, including takeoff, waypoint traversal, and landing. It listens for waypoints from the `waypoint_manager` node.
+This node sends all necessary MAVLink messages to the drone. It manages the drone's flight, including takeoff, waypoint traversal, and landing. It listens for waypoints from the `manager` node.
 
 ### 3. `drone_flight/src/manager.cpp`
 This node stores the locations of the waypoints and publishes them to `flight_execution.cpp`. It also manages the IP address and save location for each sensor and ensures the data is collected from each sensor.
@@ -57,11 +57,14 @@ A script to clean the build artifacts from the ROS workspace.
 A script to set up the ROS environment variables.
 
 ### 4. `run_mavros.sh`
-A script to launch MAVROS.
+A script to launch the MAVROS node.
 
 ### 5. `run_mission.sh`
-A script to run the mission, which includes launching necessary ROS nodes and managing the UAV's flight.
+A script to run the mission, which includes launching necessary ROS nodes (mavros, flight_execution, communication, and manager). Requires a sensor configuration file argument that should be in sensor_configurations/.
 
 ### 6. `sensor_configurations/sample_config.txt`
-A sample configuration file for sensors, including their locations and IP addresses.
+A sample configuration file for sensors, including their locations and IP addresses in the following form:
+```plaintext
+takeoff latitude, takeoff longitude,,
+sensor 1 latitude, sensor 1 longitude, sensor 1 IP address, sensor 1 data save location
 
