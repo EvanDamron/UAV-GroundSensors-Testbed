@@ -67,4 +67,5 @@ A sample configuration file for sensors, including their locations and IP addres
 ```plaintext
 takeoff latitude, takeoff longitude,,
 sensor 1 latitude, sensor 1 longitude, sensor 1 IP address, sensor 1 data save location
-
+sensor 2 latitude, sensor 2 longitude, sensor 2 IP address, sensor 2 data save location
+...
