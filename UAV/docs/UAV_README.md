@@ -32,6 +32,7 @@ UAV-GroundSensors-Testbed/
 │   │   ├── run_mission.sh
 │   ├── docs/
 │   │   ├── UAV_README.md
+```
 
 ## ROS Nodes
 
