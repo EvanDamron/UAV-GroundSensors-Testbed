@@ -39,22 +39,13 @@ UAV-GroundSensors-Testbed/
 │   ├── docs/
 │   │   ├── UAV_README.md
 ├── RaspberryPi/
-│   ├── src/
-│   │   ├── main_sensor_script.py
-│   │   ├── other_sensor_scripts.py
-│   ├── config/
-│   │   ├── sensor_config.yaml
+│   ├── uav-data-collection/
+│   │   ├── data-collection/
+|   |   |   ├── read_data.py
+|   |   |   ├── store_data.py
+│   │   ├── data-transfer/
+|   |   |   ├── data_transfer.py
+|   |   |   ├── wifi_connection.py
 │   ├── docs/
-│   │   ├── Pi_README.md
-│   ├── tests/
-│   │   ├── test_sensor_script.py
-│   └── requirements.txt
-├── scripts/
-│   ├── setup_uav.sh
-│   ├── setup_raspberry_pi.sh
-├── images/
-│   ├── uav_setup.png
-│   ├── raspberry_pi_setup.png
-├── README.md
-├── LICENSE
-└── .gitignore
+│   │   ├── RPI_README.md
+└── README.md
