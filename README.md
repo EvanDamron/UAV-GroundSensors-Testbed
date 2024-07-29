@@ -9,6 +9,7 @@ This project demonstrates an autonomous UAV that visits ground sensors, establis
 - UV data collection by Raspberry Pis
 
 ## Repository Structure
+```plaintext
 UAV-Ground-Sensor-Project/
 ├── UAV/
 │   ├── data_collection_ros/
