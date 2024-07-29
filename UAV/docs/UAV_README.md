@@ -60,7 +60,7 @@ A script to set up the ROS environment variables.
 A script to launch the MAVROS node.
 
 ### 5. `run_mission.sh`
-A script to run the mission, which includes launching necessary ROS nodes (mavros, flight_execution, communication, and manager). Requires a sensor configuration file argument that should be in sensor_configurations/.
+A script to run the mission, which includes launching necessary ROS nodes (mavros, flight_execution, communication, and manager). Requires a sensor configuration file, which should be located in the `sensor_configurations/` directory.
 
 ### 6. `sensor_configurations/sample_config.txt`
 A sample configuration file for sensors, including their locations and IP addresses in the following form:
