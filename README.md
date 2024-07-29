@@ -10,7 +10,7 @@ This project demonstrates an autonomous UAV that visits ground sensors, establis
 
 ## Repository Structure
 ```plaintext
-UAV-Ground-Sensor-Project/
+UAV-GroundSensors-Testbed/
 ├── UAV/
 │   ├── data_collection_ros/
 │   │   ├── catkin_ws/
