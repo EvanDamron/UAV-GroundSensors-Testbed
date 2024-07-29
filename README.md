@@ -28,6 +28,14 @@ UAV-Ground-Sensor-Project/
 |   |   |   |   |   |   ├── mission.launch
 │   │   │   │   │   ├── CMakeLists.txt
 │   │   │   │   │   ├── package.xml
+|   |   ├── logs/
+|   |   ├── sensor_configurations/
+|   |   |   ├── sample_config.txt
+|   |   ├── build.sh
+|   |   ├── clean.sh
+|   |   ├── ros_environment.sh
+|   |   ├── run_mavros.sh
+|   |   ├── run_mission.sh
 │   ├── docs/
 │   │   ├── UAV_README.md
 ├── RaspberryPi/
