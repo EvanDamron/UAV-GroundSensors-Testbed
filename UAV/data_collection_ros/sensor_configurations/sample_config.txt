@@ -1,0 +1,5 @@
+37.988201, -84.429977, "", ""
+37.988126, -84.430056, "192.168.8.66", "/root/yoctohome/collected_data/rpi1/data_test3.txt"
+37.988276, -84.430000, "192.168.8.67", "/root/yoctohome/collected_data/rpi2/data_test3.txt"
+37.988180, -84.429857, "192.168.8.68", "/root/yoctohome/collected_data/rpi3/data_test3.txt"
+

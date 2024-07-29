@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+
+
+    <arg name="fcu_url" default="udp://127.0.0.1:14551@:14551" />
+    <arg name="gcs_url" default="" />
+    <arg name="tgt_system" default="$(env PX4_SYS_ID)" />
+    <arg name="tgt_component" default="1" />
+    <arg name="log_output" default="screen" />
+    <arg name="fcu_protocol" default="v2.0" />
+    <arg name="respawn_mavros" default="false" />
+
+    <include file="$(find mavros)/launch/node.launch">
+        <arg name="pluginlists_yaml" value="$(find mavros)/launch/px4_pluginlists.yaml" />
+        <arg name="config_yaml" value="$(find mavros)/launch/px4_config.yaml" />
+
+        <arg name="fcu_url" value="$(arg fcu_url)" />
+        <arg name="gcs_url" value="$(arg gcs_url)" />
+        <arg name="tgt_system" value="$(arg tgt_system)" />
+        <arg name="tgt_component" value="$(arg tgt_component)" />
+        <arg name="log_output" value="$(arg log_output)" />
+        <arg name="fcu_protocol" value="$(arg fcu_protocol)" />
+        <arg name="respawn_mavros" default="$(arg respawn_mavros)" />
+    </include>
+
+  <arg name="sensor_config_file" default="/root/yoctohome/data_collection_ros/sensor_configurations/jacobson_test1.txt" /> 
+
+  <node name="manager" pkg="drone_flight" type="manager" output="screen">
+      <param name="sensor_config_file" value="$(arg sensor_config_file)" />
+  </node>
+
+  <node name="flight_execution" pkg="drone_flight" type="flight_execution" output="screen">
+  </node>
+
+  <node name="communication" pkg="drone_comm" type="communication.py" output="screen">
+  </node>
+
+
+</launch>
