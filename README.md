@@ -6,7 +6,7 @@ This project demonstrates an autonomous UAV that visits ground sensors, establis
 ## Features
 - Autonomous navigation of the ModalAI M500 UAV using MAVROS
 - Wireless data transmission from RaspberryPi to UAV via the UAV's WiFi hotspot
-- UV data collection by Raspberry Pis
+- Ultra-violet (UV) data collection by Raspberry Pis
 
 ## Repository Structure
 ```plaintext
