@@ -1,7 +1,7 @@
 # UAV-GroundSensors-Testbed
 
 ## Overview
-This project demonstrates an autonomous UAV that visits ground sensors, establishes a wireless connection, and collects data. The UAV is programmed using MAVROS, and the ground sensors are Raspberry Pis.
+This project demonstrates an autonomous UAV that visits ground sensors, establishes a wireless connection, and collects data. The UAV is programmed using MAVROS, and the ground sensors are Raspberry Pis. For more details on the two aspects of the project, see UAV/docs/UAV_README.md and RaspberryPi/docs/RPI_README.md.
 
 ## Features
 - Autonomous navigation of the ModalAI M500 UAV using MAVROS
