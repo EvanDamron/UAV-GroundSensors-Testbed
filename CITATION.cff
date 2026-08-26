@@ -22,11 +22,13 @@ preferred-citation:
   authors:
     - given-names: Xu
       family-names: Tao
+      orcid: 'https://orcid.org/0009-0002-9393-2028'
     - given-names: Evan
       family-names: Damron
       orcid: 'https://orcid.org/0009-0009-1104-3202'
     - given-names: Simone
       family-names: Silvestri
+      orcid: 'https://orcid.org/0000-0003-2357-3429'
   year: 2024
   conference:
     name: 'IEEE International Conference on Communications (ICC)'
