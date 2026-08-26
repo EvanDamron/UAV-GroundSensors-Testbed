@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: UAV-GroundSensors-Testbed
+message: >-
+  If you use this software, please cite it using this metadata.
+type: software
+authors:
+  - given-names: Evan
+    family-names: Damron
+    email: evandamron14@gmail.com
+    orcid: 'https://orcid.org/0009-0009-1104-3202'
+abstract: >-
+  Autonomous UAV testbed (MAVROS + Raspberry Pi ground sensors) for
+  wireless sensor data collection.
+keywords:
+  - uav
+  - testbed
+  - sensor networks
+  - mavros
+preferred-citation:
+  type: conference-paper
+  title: 'High-Precision Crop Monitoring Through UAV-Aided Sensor Data Collection'
+  authors:
+    - given-names: Xu
+      family-names: Tao
+    - given-names: Evan
+      family-names: Damron
+      orcid: 'https://orcid.org/0009-0009-1104-3202'
+    - given-names: Simone
+      family-names: Silvestri
+  year: 2024
+  conference:
+    name: 'IEEE International Conference on Communications (ICC)'
+  doi: '10.1109/ICC51166.2024.10622745'
